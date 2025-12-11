@@ -1,0 +1,17 @@
+In this project, two machine learning models were trained and evaluated on the Titanic dataset: Logistic Regression and K-Nearest Neighbors (KNN).
+Both models were trained using the same preprocessing pipeline, and their performance was assessed on the test set using accuracy, the confusion matrix, and the classification report.
+
+1. Logistic Regression
+Logistic Regression achieved a higher accuracy compared to KNN and demonstrated better performance across most classification metrics, including precision, recall, and F1-score.
+It also produced a more balanced confusion matrix, indicating that it was able to correctly classify both survived and non-survived passengers more consistently.
+Because Logistic Regression is a linear model, it tends to generalize well, especially on datasets with mixed numerical and categorical features such as the Titanic dataset.
+
+2. K-Nearest Neighbors (KNN)
+KNN showed lower accuracy and had difficulties correctly classifying the minority class.
+Since KNN is sensitive to the scale of features and can be affected by noise and irrelevant attributes, its performance was less stable.
+Additionally, KNN does not generalize well to unseen data because it relies solely on distances in the feature space, which can be misleading when the data distribution is complex.
+
+Final Choice
+Based on the results, Logistic Regression is the preferred model.
+It achieved stronger overall performance, produced more reliable predictions, and demonstrated better generalization on the test set.
+Its simplicity, stability, and interpretability make it a more suitable choice for this dataset compared to KNN.
